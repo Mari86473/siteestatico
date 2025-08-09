@@ -1,4 +1,59 @@
-  .texto-rosa {
-    color: #FF69B4; /* Rosa mais intenso */
-    font-size: 20px; /* Opcional: ajusta o tamanho */
-  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Container do banner */
+.banner-container {
+    width: 100%;
+    position: relative; /* Fundamental para o posicionamento absoluto da logo */
+    max-height: 600px;
+    overflow: hidden;
+}
+
+/* Imagem do banner */
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Logo sobreposta */
+.overlay-logo {
+    position: absolute;
+    width: 200px; /* Ajuste conforme necessário */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /* Centraliza perfeitamente */
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+}
+
+/* Conteúdo principal (se necessário) */
+.content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* horário de funcionamento */
+.horario-funcionamento {
+  width: 100%;
+  max-width: 300px; /* Aumentei a largura máxima */
+  margin: 5px auto;
+  border-collapse: separate; /* Mudei de collapse para separate */
+  border-spacing: 3px; /* Espaço vertical entre linhas */
+}
+
+.horario-funcionamento td {
+  padding: 9px 5px; /* Aumentei o padding */
+  border-bottom: 1px solid #green;
+}
+
+.horario-funcionamento td:first-child {
+  padding-right: 40px; /* Espaço extra após o dia */
+  font-weight: bold;
+}
